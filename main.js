@@ -18,6 +18,36 @@ $(document).ready(function() {
     $('.hamburger').click(function() {
         $('.navbar-content').toggleClass('active');
     });
+
+    let currentSlide = 0;
+    const slides = $('.slide');
+
+    function showSlide(n) {
+        slides.each(function(index) {
+            const distance = index - n;
+            const slide = $(this);
+
+            if (n === index) {
+                slide.removeClass('hide blur');
+            } else if (distance === 1 || distance === -1) {
+                slide.addClass('blur')
+            } else {
+                slide.addClass('hide');
+            }
+        });
+    }
+
+    $('#slide-prev').on('click', function() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    });
+
+    $('#slide-next').on('click', function() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    });
+
+    showSlide(currentSlide);
 });
 
 function isDarkMode() {
