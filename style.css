@@ -421,7 +421,6 @@ footer .footer-content .footer-section ul li a:hover {
     box-shadow: var(--box-shadow);
     transition: all 0.2s ease-in-out;
     margin-bottom: 2rem;
-    cursor: pointer;
     flex: 1;
     user-select: none;
 }

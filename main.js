@@ -19,6 +19,10 @@ $(document).ready(function() {
         $('.navbar-content').toggleClass('active');
     });
 
+    $('.navbar-content a').click(function() {
+        $('.navbar-content').removeClass('active');
+    });
+
     let currentSlide = 0;
     const slides = $('.slide');
 
