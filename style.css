@@ -689,3 +689,11 @@ footer .footer-content .footer-section ul li a:hover {
         margin-right: auto;
     }
 }
+
+.card p {
+    margin-top: 1em;
+}
+
+.card a {
+    color: var(--color-primary);
+}
