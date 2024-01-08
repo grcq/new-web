@@ -1,0 +1,15 @@
+{
+    "nav-home": "Thuis",
+    "nav-about": "Over",
+    "nav-portfolio": "Portfolio",
+    "nav-projects": "Projecten",
+    "nav-skills": "Vaardigheden",
+    "nav-contact": "Contact",
+
+    "intro": "Hallo, ik ben <span class=\"highlight\" lang-id=\"irl-name\">Lucas</span>",
+
+    "about-title": "Over Mij",
+    "about-intro": "Hallo! Welkom op mijn portfolio & over website! Heb je vragen? Stel ze gerust op <a href=\"https://discord.com/users/578195597400604683\" style=\"color: var(--color-primary)\">Discord!</a>",
+    "about-who": "Wie ben ik?",
+    "about-what": "Wat doe ik?"
+}

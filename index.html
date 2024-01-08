@@ -22,18 +22,42 @@
             </div>
             <div class="navbar-content">
                 <ul class="navbar-items">
-                    <li class="navbar-item"><a href="#">Home</a></li>
-                    <li class="navbar-item"><a href="#about">About</a></li>
-                    <li class="navbar-item"><a href="#portfolio">Portfolio</a></li>
-                    <li class="navbar-item"><a href="#projects">Projects</a></li>
-                    <li class="navbar-item"><a href="#skills">Skills</a></li>
-                    <li class="navbar-item"><a href="#contact">Contact</a></li>
+                    <li class="navbar-item"><a href="#" lang-id="nav-home"></a></li>
+                    <li class="navbar-item"><a href="#about" lang-id="nav-about"></a></li>
+                    <li class="navbar-item"><a href="#portfolio" lang-id="nav-portfolio"></a></li>
+                    <li class="navbar-item"><a href="#projects" lang-id="nav-projects"></a></li>
+                    <li class="navbar-item"><a href="#skills" lang-id="nav-skills"></a></li>
+                    <li class="navbar-item"><a href="#contact" lang-id="nav-contact"></a></li>
                 </ul>
                 <ul class="navbar-items">
                     <li class="navbar-item">
                         <div class="dark-mode-toggler">
                             <span class="material-icons-sharp">light_mode</span>
                             <span class="material-icons-sharp active">dark_mode</span>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <div class="language-toggler">
+                            <div class="dropdown-toggler">
+                                <span class="material-icons-sharp">language</span>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item lang" id="en">
+                                    <span class="material-icons-sharp">language</span>
+                                    <span>English</span>
+                                    <span class="material-icons-sharp enabled">checkmark</span>
+                                </div>
+                                <div class="dropdown-item lang" id="no">
+                                    <span class="material-icons-sharp">language</span>
+                                    <span class="lang-name">Norsk</span>
+                                    <span class="material-icons-sharp enabled">checkmark</span>
+                                </div>
+                                <div class="dropdown-item lang" id="nl">
+                                    <span class="material-icons-sharp">language</span>
+                                    <span class="lang-name">Nederlands</span>
+                                    <span class="material-icons-sharp enabled">checkmark</span>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -43,7 +67,7 @@
         <header>
             <div class="header-content">
                 <div class="header-text">
-                    <h1>Hi, I'm <span class="highlight">Lucas</span></h1>
+                    <h1 lang-id="intro"></h1>
                     <p>Developer</p>
                     <!--<img src="images/mc_char.png">-->
                 </div>
@@ -53,16 +77,16 @@
         <main>
             <section id="about">
                 <div class="about-content">
-                    <h2>About</h2>
+                    <h2 lang-id="about-title"></h2>
                     <hr>
-                    <p>Hello! Welcome to my portfolio & about website! Do you have any questions? Feel free to ask me on <a href="https://discord.com/users/578195597400604683" style="color: var(--color-primary)">Discord!</a></p>
+                    <p lang-id="about-intro"></p>
                     <div class="cards g-2">
                         <div class="card card-hover about-section">
-                            <h3>Who am I?</h3>
+                            <h3 lang-id="about-who"></h3>
                             <p>I am a 16 years old student, studying information technology at high school. I live in Bergen, Norway. Technically I am also half Dutch since my father is from the Netherlands. Even though I don't speak the language very well, I do understand a lot. I also drive an MT-125. In Norway, you can actually take the license for A1 at 16.</p>
                         </div>
                         <div class="card card-hover about-section">
-                            <h3>What do I do?</h3>
+                            <h3 lang-id="about-what">What do I do?</h3>
                             <p>I mainly code, play video games, and hang out with friends. The things I do the most are programming and gaming, as most of my friends are online. My favourite video games are Apex Legends, Phasmophobia, Subnautica, and Hearts of Iron IV. I also have some interest for table tennis (also known as ping pong) and chess. I have a big interest for chess, my current rating is around 1200.</p>
                         </div>
                     </div>
@@ -79,6 +103,10 @@
                         <div class="card card-hover card-image-only">
                             <img src="images/portfolio/Screenshot%202023-12-29%20at%2020.40.30.png">
                             <p class="image-text">Verve Website</p>
+                        </div>
+                        <div class="card card-hover card-image-only" redirect-to="https://host.ezerium.com">
+                            <img src="images/portfolio/Skjermbilde%202024-01-08%20085033.png">
+                            <p class="image-text">Ezerium Hosting Website</p>
                         </div>
                     </div>
                 </div>
