@@ -15,7 +15,11 @@ function readTextFile(file, callback) {
 $(document).ready(function() {
     ['en', 'no', 'nl'].forEach(function (item, index) {
         readTextFile(`./lang/${item}.json`, function(text){
-            lang[item] = JSON.parse(text);
+            try {
+                lang[item] = JSON.parse(text);
+            } catch(e) {
+                console.log("Error parsing language '" + item + "'. Error:\n" + e + "\n\nText: " + text)
+            }
         });
     });
 
